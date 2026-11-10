@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Característiques i preus de les habitacions de l'Hotel Terror">
+    <meta name="author" content="Marc Bertomeu Panisello">
+    <meta name="keywords" content="Hotel Terror, habitacions, preus">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Terror - Preus</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/estrelles.jpg" alt="Hotel Terror">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="precios.html" class="actual">Preus</a></li>
+                <li><a href="reserva.html">Reserves</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contingut">
+
+        <h1><span>Hotel Terror:</span> Característiques i preus</h1>
+
+        <div class="taula-contenidor">
+
+            <table class="taula-preus">
+
+                <thead>
+                    <tr>
+                        <th>Tipus d'habitació</th>
+                        <th>Persones</th>
+                        <th>Característiques</th>
+                        <th>Preu</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Habitació individual</th>
+                        <td>
+                            <img src="img/individual.png" alt="Una persona">
+                        </td>
+                        <td>Bany compartit, 20 m², microones</td>
+                        <td>70 €</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Habitació doble (1 o 2 llits)</th>
+                        <td rowspan="2" class="persones-doble">
+                            <img src="img/doble.png" alt="Dues persones">
+                         <hr>
+                            <img src="img/individual.png" alt="Una persona">
+                        </td>
+                        <td rowspan="2">Bany privat, 30 m², microones</td>
+                        <td>120 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>90 €</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Habitació doble superior</th>
+                        <td>
+                            <img src="img/doble.png" alt="Dos personas">
+                        </td>
+                        <td>Bany privat, 35 m², zona de cuina, llit doble</td>
+                        <td>140 €</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Habitació triple (1, 2 o 3 llits)</th>
+                        <td rowspan="3" class="persones-triple">
+                            <img src="img/triple.png" alt="Tres persones">
+                        <hr>
+                            <img src="img/doble.png" alt="Dues persones">
+                        <hr>
+                            <img src="img/individual.png" alt="Una persona">
+                        </td>
+                        <td rowspan="3">Bany privat, 40 m², zona de cuina</td>
+                        <td>150 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>130 €</td>
+                    </tr>
+
+                    <tr>
+                        <td>100 €</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="4">
+                            Característiques comunes: WiFi gratis / TV de pantalla plana / Aire acondicionat
+                        </th>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Activitat realitzada per Marc Bertomeu Panisello</p>
+
+        <p>
+            Fotografia de la portada
+            <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img src="img/creative-commons.png" alt="Creative Commons">
+        </a>
+    </footer>
+
+</body>
+</html>

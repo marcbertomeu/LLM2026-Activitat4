@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CAPÇALERA */
+
+header {
+    height: 90px;
+    background-color: #398b16;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    border-bottom: 4px solid #888;
+}
+
+header img {
+    height: 80px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 65px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #ff1728;
+}
+
+nav a.actual {
+    border-bottom: 3px solid white;
+}
+
+/* PORTADA */
+
+.portada {
+    min-height: 575px;
+    flex: 1;
+    background-image: url("../img/casa_encantada.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px;
+    color: #ff1728;
+}
+
+.portada h1 {
+    font-size: 44px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.portada p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 2px 2px 3px black;
+}
+
+/* CONTINGUT */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contingut {
+    flex: 1;
+    width: 100%;
+    padding: 30px 6%;
+    color: black;
+    background-color: white;
+}
+
+.contingut h1 {
+    color: black;
+    font-size: 32px;
+    margin-bottom: 35px;
+    font-weight: normal;
+}
+
+.contingut h1 span {
+    color: blue;
+    font-weight: bold;
+}
+
+/* TAULA DE PREUS */
+
+.taula-contenidor {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.taula-preus {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.taula-preus th,
+.taula-preus td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+}
+
+.taula-preus thead th,
+.taula-preus tfoot th {
+    background-color: #526779;
+    color: white;
+}
+
+/* Colors de les habitacions */
+
+.taula-preus tbody th,
+.taula-preus tbody td {
+    background-color: white;
+}
+
+/* Habitació individual: gris */
+.taula-preus tbody tr:nth-child(1) > * {
+    background-color: #eeeeee;
+}
+
+/* Habitació doble superior: gris */
+.taula-preus tbody tr:nth-child(4) > * {
+    background-color: #eeeeee;
+}
+
+.taula-preus tbody th {
+    color: black;
+}
+
+.taula-preus tbody td {
+    color: #a34b4b;
+    font-size: 14px;
+}
+
+/* IMATGES DE LA TAULA */
+
+.taula-preus img {
+    width: 55px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* HABITACIÓ DOBLE */
+
+.persones-doble img {
+    display: block;
+    margin: 5px auto;
+}
+
+.persones-doble hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #999;
+    margin: 8px 0;
+}
+
+/* HABITACIÓ TRIPLE */
+
+.persones-triple img {
+    display: block;
+    margin: 5px auto;
+}
+
+.persones-triple hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #999;
+    margin: 8px 0;
+}
+
+/* PEU DE PÀGINA */
+
+footer {
+    background-color: #398b16;
+    color: black;
+    padding: 30px 6% 20px;
+    font-size: 14px;
+    border-top: 4px solid #888;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer img {
+    width: 100px;
+    vertical-align: middle;
+}
+
+/* FORMULARI DE RESERVES */
+
+.formulari {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #eeeeee;
+    color: black;
+}
+
+.formulari fieldset {
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.formulari legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.formulari label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.formulari input:not([type="radio"]),
+.formulari select,
+.formulari textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #999;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.formulari p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formulari small {
+    display: block;
+    margin-top: 8px;
+    color: #555;
+}
+
+.formulari label.opcio {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.formulari input[type="radio"] {
+    margin-right: 5px;
+}
+
+.botons-formulari {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botons-formulari button {
+    padding: 12px 25px;
+    margin: 5px;
+    background-color: #398b16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.botons-formulari button:hover {
+    background-color: #28680e;
+}

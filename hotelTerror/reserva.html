@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulari de reserves de l'Hotel Terror">
+    <meta name="author" content="Marc Bertomeu Panisello">
+    <meta name="keywords" content="Hotel Terror, reserves, habitacions">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Terror - Reserves</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/estrelles.jpg" alt="Hotel Terror">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="precios.html">Preus</a></li>
+                <li><a href="reserva.html" class="actual">Reserves</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contingut">
+
+        <h1><span>Hotel Terror:</span> Formulari de reserves</h1>
+
+        <form class="formulari" action="#" method="post">
+
+            <fieldset>
+                <legend>Dades personals</legend>
+
+                <label for="tratamiento">Tractament:</label>
+                <select id="tratamiento" name="tratamiento" required>
+                    <option value="">Seleccioneu una opció</option>
+                    <option value="Sr">Sr</option>
+                    <option value="Sra">Sra</option>
+                    <option value="Srta">Srta</option>
+                </select>
+
+                <label for="nombre">Nom:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellidos">Cognoms:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="telefono">Telèfon:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="confirmar-email">Confirmar correu electrònic:</label>
+                <input type="email" id="confirmar-email" name="confirmar-email" required>
+
+                <label for="password">Contrasenya:</label>
+                <input type="password" id="password" name="password" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dades de la reserva</legend>
+
+                <label for="habitacion">Tipus d'habitació:</label>
+                <select id="habitacion" name="habitacion" required>
+                    <option value="">Seleccioneu una habitació</option>
+                    <option value="individual">Habitació individual</option>
+                    <option value="doble">Habitació doble</option>
+                    <option value="doble-superior">Habitació doble superior</option>
+                    <option value="triple">Habitació triple</option>
+                </select>
+
+                <label for="personas">Número de persones:</label>
+                <input type="number" id="personas" name="personas" min="1" required>
+
+                <label for="entrada">Data d'entrada:</label>
+                <input type="date" id="entrada" name="entrada" required>
+
+                <label for="salida">Data de sortida:</label>
+                <input type="date" id="salida" name="salida" required>
+
+                <label for="peticiones">Peticions especials:</label>
+                <textarea id="peticiones" name="peticiones" rows="4"></textarea>
+
+                <small>
+                    Farem tot el possible per satisfer les seves peticions,
+                    encara que no podem garantir-les.
+                </small>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dades adicionals</legend>
+
+                <p>Desitja reservar parking cobert (8 €/nit)?</p>
+
+                <label class="opcio">
+                    <input type="radio" name="parking" value="si">
+                    Sí
+                </label>
+
+                <label class="opcio">
+                    <input type="radio" name="parking" value="no" checked>
+                    No
+                </label>
+
+                <small>L'hotel disposa també de parking exterior gratuït.</small>
+
+                <label for="hora">Hora prevista d'arribada:</label>
+                <input type="time" id="hora" name="hora">
+
+                <p>Desitja afegir esmorzar (5 €/dia)?</p>
+
+                <label class="opcio">
+                    <input type="radio" name="desayuno" value="si">
+                    Sí
+                </label>
+
+                <label class="opcio">
+                    <input type="radio" name="desayuno" value="no" checked>
+                    No
+                </label>
+
+            </fieldset>
+
+            <div class="botons-formulari">
+                <button type="submit">Enviar reserva</button>
+                <button type="reset">Borrar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Activitat realitzada per Marc Bertomeu Panisello</p>
+
+        <p>
+            Fotografia de la portada
+            <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img src="img/creative-commons.png" alt="Creative Commons">
+        </a>
+    </footer>
+
+</body>
+</html>
